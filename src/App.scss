@@ -1,0 +1,10 @@
+@import "/src/assets/scss/variables";
+
+.App {
+  text-align: center;
+  background-color: #141217;
+  min-height: 100vh;
+  color: hsl(0, 0%, 100%);
+  font-family: $font-family;
+}
+

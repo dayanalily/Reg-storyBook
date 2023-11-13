@@ -1,0 +1,71 @@
+@import "/src/assets/scss/variables";
+
+.MuiBox-root.av-input {
+  .MuiOutlinedInput-root {
+    border-radius: $border-radius;
+  }
+
+  .MuiInputBase-root {
+    .MuiOutlinedInput-notchedOutline {
+      border-color: $color-outline;
+    }
+
+    &:hover:not(.Mui-disabled) {
+      .MuiOutlinedInput-notchedOutline {
+        border-color: $color-secondary;
+      }
+    }
+
+    &.Mui-focused {
+      .MuiOutlinedInput-notchedOutline {
+        border-color: $color-secondary;
+        border-width: 1px;
+      }
+    }
+
+    .MuiInputBase-input {
+      font-family: $font-family;
+      color: $color-on-surface;
+      border-radius: $border-radius;
+      background-color: $color-surface;
+      padding: 14px 16px !important;
+      font-size: $font-size-body;
+      font-weight: 400;
+
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        box-shadow: 0 0 0 100px $color-surface inset !important;
+        -webkit-box-shadow: 0 0 0 100px $color-surface inset !important;
+        border-radius: $border-radius !important;
+        -webkit-text-fill-color: $color-on-surface !important;
+        font-family: $font-family;
+        caret-color: $color-on-surface ;
+      }
+
+      &:-webkit-autofill {
+        -webkit-text-fill-color: $color-on-surface !important;
+      }
+      &:-internal-autofill-previewed {
+        font-size: $font-size-body !important;
+        font-family: $font-family;
+      }
+    }
+
+    .Mui-disabled {
+      opacity: .5;
+
+      .MuiOutlinedInput-notchedOutline {
+        border: 1px solid $color-outline !important;
+      }
+    }
+  }
+
+  .inputLabel {
+    color: $color-on-surface;
+    font-family: $font-family;
+    padding-bottom: 13px;
+    display: block;
+  }
+}

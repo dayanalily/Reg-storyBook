@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+// Typography
+$font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-size-body: 1rem;
+
+// Borders
+$border-radius: 2px;
+
+// Main Colors
+$color-primary: #722a85;
+$color-secondary: #bf5af2;
+
+// Feedback Colors
+$color-success: #48a382;
+$color-error: #bc3f5d;
+$color-warning: #d79755;
+$color-info: #6fa9d3;
+
+// Dark Theme Colors
+$color-surface-dark: #453e47;
+$color-background-dark: #000000;
+$color-neutral-dark: #221B24;
+$color-on-surface-dark: #e3e1e4;
+$color-on-primary-dark: #ffffff;
+$color-overlay-dark: rgba(0, 0, 0, 0.4);
+$color-outline-dark: rgba(255, 255, 255, 0.2);
+
+// Light Theme Colors
+$color-surface-light: #fbfbfd;
+$color-background-light: #f5f6f9;
+$color-neutral-light: #ffffff;
+$color-on-surface-light: #111013;
+$color-on-primary-light: #ffffff;
+$color-overlay-light: rgba(0, 0, 0, 0.4);
+$color-outline-light: rgba(0, 0, 0, 0.2);
+
+// Surfaces Colors
+$color-surface: var(--color-surface);
+$color-background: var(--color-background);
+$color-neutral: var(--color-neutral);
+$color-on-surface: var(--color-on-surface);
+$color-on-primary: var(--color-on-primary);
+$color-overlay: var(--color-overlay);
+$color-outline: var(--color-outline);
+
+.dark-theme {
+  --color-surface: #{$color-surface-dark};
+  --color-background: #{$color-background-dark};
+  --color-neutral: #{$color-neutral-dark};
+  --color-on-surface: #{$color-on-surface-dark};
+  --color-on-primary: #{$color-on-primary-dark};
+  --color-overlay: #{$color-overlay-dark};
+  --color-outline: #{$color-outline-dark};
+}
+
+.light-theme {
+  --color-surface: #{$color-surface-light};
+  --color-background: #{$color-background-light};
+  --color-neutral: #{$color-neutral-light};
+  --color-on-surface: #{$color-on-surface-light};
+  --color-on-primary: #{$color-on-primary-light};
+  --color-overlay: #{$color-overlay-light};
+  --color-outline: #{$color-outline-light};
+}
+
+// Only for Storybook background preview
+body {
+  background: $color-background;
+  .docs-story {
+    background: $color-background;
+  }
+}

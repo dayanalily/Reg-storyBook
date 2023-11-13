@@ -1,0 +1,109 @@
+@import "/src/assets/scss/variables";
+
+.MuiButton-root.av-button {
+  font-family: $font-family;
+  text-transform: none;
+  font-weight: 500;
+  font-size: $font-size-body;
+  &--large {
+    padding: 12px 20px;
+  }
+  &--small {
+    padding: 6px 20px;
+  }
+
+  // Primary button
+  &--primary {
+    border: 1px solid $color-primary;
+    border-radius: $border-radius;
+    background-color: $color-primary;
+    color: $color-on-primary;
+    &:hover {
+      background-color: rgba($color-primary, 0.9);
+      border: 1px solid rgba($color-primary, 0.9);
+    }
+    &:disabled {
+      color: $color-on-primary;
+      border: 1px solid $color-primary;
+      border-radius: $border-radius;
+      background-color: $color-primary;
+      opacity: 0.5;
+    }
+  }
+
+  // Secondary button
+  &--secondary {
+    border: 1px solid $color-secondary;
+    border-radius: $border-radius;
+    background-color: $color-secondary;
+    color: $color-on-primary;
+    &:hover {
+      background-color: rgba($color-secondary, 0.9);
+      border: 1px solid rgba($color-secondary, 0.9);
+    }
+    &:disabled {
+      color: $color-on-primary;
+      border: 1px solid $color-secondary;
+      border-radius: $border-radius;
+      background-color: $color-secondary;
+      opacity: 0.5;
+    }
+  }
+
+  // Alternate button
+  &--alternate {
+    border: 1px solid $color-surface;
+    border-radius: $border-radius;
+    background-color: $color-surface;
+    color: $color-on-surface;
+    &:hover {
+      background-color: rgba($color-surface, 0.9);
+      // border: 1px solid rgba($color-surface, 0.9);
+    }
+    &:disabled {
+      color: $color-on-surface;
+      border: 1px solid $color-surface;
+      border-radius: $border-radius;
+      background-color: $color-surface;
+      opacity: 0.5;
+    }
+  }
+
+    // Outline button
+    &--outline {
+      border: 1px solid $color-secondary;
+      border-radius: $border-radius;
+      background-color: $color-surface;
+      color: $color-on-surface;
+      &:hover {
+        background-color: rgba($color-surface, 0.9);
+        border: 1px solid rgba($color-secondary, 0.9);
+      }
+      &:disabled {
+        color: $color-on-surface;
+        border: 1px solid  $color-secondary;
+        border-radius: $border-radius;
+        background-color: $color-surface;
+        opacity: 0.5;
+      }
+    }
+
+    // Text button
+    &--text {
+      border: none;
+      border-radius: $border-radius;
+      background-color: $color-background;
+      color: $color-on-surface;
+      &:hover {
+        background-color: rgba($color-surface, 0.9);
+      }
+      &:disabled {
+        color: $color-on-surface;
+        border: none;
+        border-radius: $border-radius;
+        background-color: $color-background;
+        opacity: 0.5;
+      }
+    }
+
+}

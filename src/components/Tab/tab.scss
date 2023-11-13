@@ -1,0 +1,28 @@
+@import "/src/assets/scss/variables";
+
+.av-tabs {
+    .MuiTabs-indicator {
+        display: none;
+    }
+    .MuiTab-root {
+        font-family: $font-family;
+        text-transform: none;
+        color: $color-on-surface;
+        font-weight: 500;
+        min-width: 115px;
+        min-height: inherit;
+    }
+
+    .MuiTab-root.MuiTab-textColorInherit {
+        opacity: 1;
+        &.Mui-disabled {
+            opacity: .5;
+        }
+        &.Mui-selected {
+            background: $color-neutral;
+            border-radius: 4px 4px 0 0;
+            border: 1px solid $color-outline;
+            border-bottom: none;
+        }
+    }
+}

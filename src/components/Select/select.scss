@@ -1,0 +1,77 @@
+@import "/src/assets/scss/variables";
+
+.MuiFormControl-root.av-select {
+  .MuiInputBase-root {
+    .MuiSelect-icon.MuiSelect-iconOutlined {
+      top: 14px;
+      right: 14px;
+    }
+    .Mui-disabled {
+      opacity: .5;
+      .MuiOutlinedInput-notchedOutline {
+        border: 1px solid $color-outline;
+      }
+    }
+  }
+  .inputLabel {
+    color: $color-on-surface;
+    font-family: $font-family;
+    padding-bottom: 13px;
+  }
+  .MuiSelect-outlined.MuiSelect-outlined {
+    font-family: $font-family;
+    background-color: $color-surface;
+    color: $color-on-surface;
+    border-radius: $border-radius;
+  }
+  .MuiOutlinedInput-notchedOutline {
+    border: 1px solid $color-outline;
+  }
+  .MuiOutlinedInput-input {
+    padding: 8.5px 14px;
+  }
+  .MuiOutlinedInput-root {
+    border-radius: $border-radius;
+    &.Mui-focused {
+      .MuiOutlinedInput-notchedOutline {
+        border-color:$color-secondary;
+        border-width: 1px;
+      }
+    }
+    &:hover:not(.Mui-disabled) {
+      .MuiOutlinedInput-notchedOutline {
+        border-color: $color-secondary;
+      }
+    }
+  }
+  .MuiFormLabel-root {
+    font-family: $font-family;
+    color: $color-on-surface;
+    padding-left: 18px;
+    z-index: 1;
+    &.Mui-focused {
+      color: $color-on-surface;
+    }
+  }
+  .MuiInputLabel-formControl {
+    transform: translate(0, 16px) scale(1);
+    &.MuiInputLabel-shrink {
+      transform: translate(0, -6px) scale(0.75);
+    }
+  }
+}
+.MuiPaper-root.av-dropdown {
+  background-color: $color-surface;
+  border-radius: 0 0 $border-radius $border-radius;
+  .MuiList-padding {
+    padding: 0;
+  }
+  .MuiMenuItem-root {
+    font-family: $font-family;
+    color: $color-on-surface;
+    &.Mui-selected,
+    &.Mui-selected:hover {
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+  }
+}
